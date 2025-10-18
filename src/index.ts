@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv"
 import http from "http";
 import cookieParser from "cookie-parser"
-import authRoutes from "./auth.routes";
+import authRoutes from "./routes/auth.routes";
 
 // env
 dotenv.config();
@@ -16,7 +16,7 @@ const server = http.createServer(app);
 
 // configs
 const CorsOptions = {
-    origin: "http://localhost:5000",
+    origin: '*',
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true

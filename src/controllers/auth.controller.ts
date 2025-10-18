@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { Service } from "./auth.service";
-import { user } from "./types/general";
+import { Service } from "../services/auth.service";
+import { user } from "../types/general";
 
 const service = new Service();
 

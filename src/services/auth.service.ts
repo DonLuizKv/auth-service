@@ -1,4 +1,4 @@
-import { user } from "./types/general"
+import { user } from "../types/general"
 
 export class Service {
     constructor() { }
